@@ -23,11 +23,23 @@
     </style>
   </head>
   <body>
-    <ons-tabbar swipeable position="bottom">
-      <ons-tab page="home.html" label="Home" active> </ons-tab>
-      <ons-tab page="courses.html" label="Courses"> </ons-tab>
-      <ons-tab page="about.html" label="About"> </ons-tab>
-    </ons-tabbar>
+    <ons-splitter>
+      <ons-splitter-side
+        id="menu"
+        side="left"
+        width="220px"
+        page="menu.html"
+        collapse
+        swipeable
+      >
+      </ons-splitter-side>
+
+      <ons-splitter-content
+        id="content"
+        page="navicontainer.html"
+      ></ons-splitter-content>
+    </ons-splitter>
+
     <script type="text/javascript" src="cordova.js"></script>
     <script src="app.js"></script>
   </body>
